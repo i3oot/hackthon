@@ -1,0 +1,13 @@
+{
+  "name": "Google Cloud SDK Components",
+  "id": "gcloud-components",
+  "version": "0.1.0",
+  "description": "Installs additional Google Cloud SDK components as part of the devcontainer build.",
+  "options": {
+    "additionalComponents": {
+      "type": "string",
+      "description": "Comma-separated list of Google Cloud SDK components to install.",
+      "default": ""
+    }
+  }
+}
