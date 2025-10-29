@@ -1,0 +1,24 @@
+{
+  "name": "Python (google-adk) - features",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/python": {
+      "version": "3.11"
+    },
+    "ghcr.io/devcontainers/features/git": {}
+  },
+  "workspaceFolder": "/workspaces/hackthon",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  },
+  "postCreateCommand": "python -m pip install --upgrade pip && pip install -r requirements.txt",
+  "remoteUser": "vscode"
+}

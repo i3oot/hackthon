@@ -1,0 +1,3 @@
+# Primary dependency requested by user
+google-adk
+uv
